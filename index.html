@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,600;1,600&family=Inter:wght@100;200;300;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;1,600&family=Inter:wght@100;200;300;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./img/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>jokenpô</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="box-01">
+          <img src="./img/logo.svg" alt="logo" />
+        </div>
+        <div class="box-02">
+          <p>pontuação</p>
+          <h2 id="punctuation">0</h2>
+        </div>
+      </header>
+
+      <main>
+        <div class="card" id="card">
+          <div class="sub-card01">
+            <div id="papel" class="cards">
+              <div class="imgs">
+                <img src="./img/icon-paper.svg" alt="papel" />
+              </div>
+            </div>
+            <div id="tesoura" class="cards">
+              <div class="imgs">
+                <img src="./img/icon-scissors.svg" alt="tesoura" />
+              </div>
+            </div>
+          </div>
+
+          <div class="sub-card02">
+            <div id="pedra" class="cards">
+              <div class="imgs">
+                <img src="./img/icon-rock.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="result" id="Card">
+          <div class="letf">
+            <p>você escolheu</p>
+            <div class="cards no" id="border">
+              <div class="imgs">
+                <img id="you" src="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="center">
+            <h2 id="result"></h2>
+            <button id="bnt">JOGAR DE NOVO</button>
+          </div>
+
+          <div class="right">
+            <p>o robô escolheu</p>
+            <div class="cards no" id="robo-Border">
+              <div class="imgs">
+                <img id="robo" src="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div id="rules" class="regras">
+        <div class="box-03">
+          <div class="title-exit">
+            <h2>Regras</h2>
+            <p id="exit">X</p>
+          </div>
+          <div class="box-regras">
+            <img src="./img/image-rules.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <h2 id="see-rules">REGRAS</h2>
+      </footer>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

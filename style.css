@@ -1,0 +1,272 @@
+/* ======================== global ==================== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: hsl(214, 47%, 23%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1366px;
+  height: 100vh;
+  margin: auto;
+  position: relative;
+  padding-top: 10px;
+}
+
+/* ========================= header =================== */
+
+header {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 40%);
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+.box-01 {
+  width: 77%;
+  margin: auto;
+}
+
+.box-02 {
+  background-color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.box-02 p {
+  font-size: small;
+  font-weight: 700;
+  color: hsl(229, 64%, 46%);
+}
+
+.box-02 h2 {
+  font-size: xx-large;
+  color: hsl(229, 25%, 31%);
+}
+
+/* ======================== main =============== */
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 380px;
+}
+
+.card {
+  width: 500px;
+  margin-bottom: 40px;
+  background-image: url("./img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 248px;
+}
+
+.sub-card01 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sub-card02 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.cards {
+  border: 16px solid;
+  background: aliceblue;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+}
+
+#pedra {
+  display: inline-block;
+  border-color: hsl(349, 71%, 52%);
+  padding-top: 27px;
+}
+
+#papel {
+  display: inline-block;
+  border-color: hsl(230, 89%, 65%);
+  padding-top: 20px;
+}
+
+#tesoura {
+  display: block;
+  border-color: hsl(39, 89%, 49%);
+  padding-top: 20px;
+}
+
+.imgs {
+  width: 100%;
+  text-align: center;
+}
+
+.imgs img {
+  width: 55%;
+}
+
+.regras {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.regras.ativo {
+  visibility: visible;
+}
+
+.box-03 {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 40%;
+  padding: 20px;
+}
+
+.title-exit {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-exit h2 {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.title-exit p {
+  font-size: x-large;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.box-regras {
+  width: 100%;
+  text-align: center;
+}
+
+.box-regras img {
+  width: 80%;
+}
+
+.result {
+  width: 590px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.letf p,
+.right p {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+.center h2 {
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.center button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  color: hsl(349, 71%, 52%);
+  background: #fff;
+  cursor: pointer;
+}
+
+.no {
+  cursor: default;
+}
+
+/* ======================== footer ====================== */
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+  color: #fff;
+}
+
+footer h2 {
+  font-weight: 200;
+  font-size: medium;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 540px) {
+  header {
+    width: calc(100% - 8%);
+  }
+  main {
+    height: 430px;
+  }
+  footer {
+    justify-content: center;
+    padding: 0;
+  }
+  .result {
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    width: 500px;
+  }
+  .center {
+    position: absolute;
+    bottom: 12%;
+    text-align: center;
+  }
+  .center h2 {
+    font-size: xxx-large;
+  }
+  .center button {
+    padding: 10px 59px;
+  }
+  .box-03 {
+    width: 92%;
+  }
+}
+
+@media (max-width: 320px) {
+  .cards {
+    width: 130px;
+    height: 130px;
+  }
+  .box-01 img {
+    width: 95%;
+  }
+  .result {
+    width: 260px;
+  }
+}
